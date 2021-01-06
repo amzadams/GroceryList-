@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#9ce">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/title"
+                android:text="Add Item"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/title"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Item Name"
+                />
+            <EditText
+                android:id="@+id/qty"
+                android:layout_below="@id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Add Quantity"
+                android:inputType="number"/>
+            <Button
+                android:text="Save"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:id="@+id/saveButton"
+                android:layout_below="@id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
